@@ -1,0 +1,332 @@
+//Fonts
+  /* Bold */
+  @font-face {
+    font-family: 'CooperHewitt';
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  /* Medium */
+  @font-face {
+    font-family: 'CooperHewitt-Medium';
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  /* Light */
+  @font-face {
+    font-family: 'CooperHewitt-Light';
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.eot'); /* IE9 Compat Modes */
+    src: url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/Cooper-Hewitt/CooperHewitt-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
+//variables
+  //colors
+  $teal-base: #008B8F;
+  $coral-base: #DF7760;
+  $black: #282423;
+  $grey: #9D9994;
+  $light-grey: #E2DFDC;
+
+  @mixin center {
+    display: block;
+    margin: 0 auto;
+  }
+
+/* General */
+  body {
+    background-color: white;
+    font-size: 14pt;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    color: $black;
+  }
+
+  h1 {
+    font-family: "CooperHewitt", sans-serif;
+    font-weight: 700;
+    font-size: 48pt;
+  }
+
+/* Bottom Nav (footer) */
+  #footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: $light-grey;
+    z-index: 9;
+    text-align: center;
+    color: $teal-base;
+    font-size: 12pt;
+    bottom: 0px;
+    font-family: "CooperHewitt", sans-serif;
+
+    .box-shadow-menu {
+      margin-top: -9px;
+    }
+
+    .chapter-tab {
+      font-family: "CooperHewitt", sans-serif;
+      color: grey;
+      text-align: left;
+    }
+
+    .tabs {
+      text-transform: uppercase;
+      border-left: 1px solid white;
+      padding: 14px 10px 0 10px;
+      text-align: center;
+      height: 60px;
+      padding-top: 15px;
+
+      p {
+        margin-bottom: 10px;
+      }
+      &.tab-hover:hover {
+        background-color: #008B8F;
+        color: white;
+      }
+      &.menu-tab {
+        padding-left: 10px;
+      }
+      &.about-tab {
+        padding-right: 10px;
+      }
+    }
+
+  }
+
+//conatainers
+  .container-text {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .container-video, .container-graphic {
+    @extend .container-text;
+    width: 70%;
+  }
+
+  .video-padding {
+    padding-top: 0px !important;
+    padding-bottom: 60px !important;
+    margin-bottom: 15px;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .embed-container iframe {
+    min-height: 700px;
+  }
+
+// buttons
+  @mixin button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  .button-primary {
+    @include button;
+    background-color: $coral-base;
+    &:hover {
+      background-color: $grey;
+      color: white;
+    }
+  }
+
+  .button-secondary {
+    @extend .button-primary;
+    background-color: $teal-base;
+  }
+
+// sections
+  .container-graphic {
+    @extend body;
+    font-size: 12pt;
+  }
+
+//paragraph
+  p {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    .last-para {
+      margin-bottom: 50px;
+    }
+  }
+  .dropcap {
+    width: 75px;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+  .story-image {
+    float: right;
+    width: 450px;
+    height: auto;
+  }
+
+/*hamburger menu */
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+
+}
+
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  top: 0.4em;
+  width: 1.4em;
+  height: 0.15em;
+  background: #008B8F;
+  box-shadow:
+    0 0.4em 0 0 #008B8F,
+    0 0.8em 0 0 #008B8F;
+}
+.box-shadow-menu:beforehover {
+  background: white;
+
+}
+
+iframe {
+  height: 100px;
+  border: 0;
+}
+
+.tabs-hover {
+  color: $teal-base;
+  a {
+    color: #008B8F;
+  }
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@mixin chapter_nav {
+  width: 200px;
+  position: absolute;
+  top: 38%;
+  padding: 15px;
+  background-color: $teal-base;
+  color: white;
+  display: none;
+}
+
+#previous-chapter {
+  @include chapter_nav;
+  left: -200px;
+}
+
+#next-chapter {
+  @include chapter_nav;
+  right: -200px;
+}
+
+#logo {
+  width: 120px;
+  top: 25px;
+  left: 1.5%;
+  float: left;
+  position: fixed;
+}
+
+#switch_language {
+  float: right;
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  right: 2%;
+  width: 120px;
+  padding: 2px 2px 1px;
+  background-color: #E6E7E8;
+  font-size: .7em;
+  line-height: 1.8em;
+  color: $teal-base;
+  border-radius: 0 0 4px 4px;
+
+  a {
+    color: $teal-base;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    background-color: $teal-base;
+    color: white;
+  }
+}
+
+#footer {
+  .menu-tab {
+    border-left: none;
+    padding-right: 40px;
+  }
+
+  .chaptertab {
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 10px;
+    color: #9C9994;
+    text-transform: none;
+    font-family: 'CooperHewitt';
+    font-size: 16pt;
+    display: inline-block;
+  }
+}
+
+.arthead {
+  @include center;
+  width: 55%;
+}
+
+.article_subhead {
+  font-family: "CooperHewitt-Light", sans-serif;
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.article_credits {
+  text-align: center;
+  line-height: 0px;
+
+  .article_by {
+    font-weight: 700;
+  }
+}
