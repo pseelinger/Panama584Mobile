@@ -84,6 +84,18 @@ text-decoration: none;
 .nav-toggle:before{
   color: #008A8E;
 }
-#nav_ul{
+#nav_ul, #sub-nav{
   padding-left: 0;
+}
+.article_subhead{
+  font-size: 5vh;
+}
+#sub-nav{
+  margin-left: 20px;
+  overflow-y: hidden;
+  height: 300px;
+  transition: height 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+.no-display{
+  max-height: 0;
 }

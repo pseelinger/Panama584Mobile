@@ -1,10 +1,11 @@
 /* General */
 body {
-  background-color: white;
+  background-color: #33A1A5;
   font-size: 14pt;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   color: #282423;
+  height: 100%;
 }
 p{
   margin-bottom: 0;
@@ -36,7 +37,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-
+  height: 100vh;
 }
 
 #home_section ul {
@@ -178,8 +179,7 @@ a:hover #play_button {
 .chapters {
   border-bottom: 2px solid rgba(255, 255, 255, .6);
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 20vh;
 
 }
 .home_ul{
@@ -305,9 +305,11 @@ canvas {
 .home_ul a .chapter_one:hover:after, .home_ul a .chapter_two:hover:after, .home_ul a .chapter_three:hover:after, .home_ul a .chapter_four:hover:after, .home_ul a .chapter_five:hover:after{
 display: none;
 }
+.chapter_five{
+  border-bottom: 0px;
+}
 #nav_ul a{
   color: white;
-
 }
 #nav_ul li{
   list-style-type: none;
@@ -327,7 +329,14 @@ display: none;
   font-size: 22px;
 }
 #chapters_section{
-  background-image: url("/media/img/home_ocean.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100vh;
+}
+#sub-nav{
+  margin-left: 20px;
+  overflow-y: hidden;
+  height: 300px;
+  transition: height 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+.no-display{
+  max-height: 0;
 }
