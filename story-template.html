@@ -144,12 +144,14 @@
       </div>
     </div>
 
-    <!-- Page 4: Graphic -->
+    <!-- Page 4: 360 Video -->
     <div class="section video-padding fourthPage_dot" id="section3">
-      <div class="intro container-graphic">
-        <div class='embed-container' id="interactive-container">
-          <iframe src='graphics/reef/index.html' id="interactive-frame" allowFullScreen></iframe>
-        </div>
+      <script src="360/embedpano.js"></script>
+      <div id="pano" style="width:100%;height:300px;">
+      	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+      	<script>
+      		embedpano({js:"360/krpano.js", xml:"360/krpano.xml", target:"pano", html5:"always", id:"krpanoPlayer", passQueryParameters:true});
+      	</script>
       </div>
     </div>
 
