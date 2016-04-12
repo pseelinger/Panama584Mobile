@@ -42,7 +42,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-vide-bg="assets/home/home-cin.mp4" data-vide-options="loop: true, muted: true, position: center center">
 
   <div id="fullpage">
     <!-- Page 1: Video -->
@@ -71,36 +71,16 @@
          </div>
          <div class="wrapper">
 
-        <!-- <h3>The evolving environment in Bocas del Toro, Panam<span class="no_spacing">a</span></h3> -->
+           <h3>The province of Bocas del Toro, Panama, is a paragon of issues facing
+             our world. Environmental sustainability, human rights and economic stability
+             combine in a complex mix of elements that culminate in Bocas.</h3>
+             <button class="btn btn-default" id="trailer_button">Launch experience</button>
 
-        <div id="play_trailer">
-
-          <div id="play_button_container">
-            <a href="#" class="play_hover">
-              <div id="play_button">
-              </div>
-            </a>
-          </div>
-
-          <div class="view_trailer">
-            <div class="trailer_text"><a href="#">View trailer</a></div>
-            <div class="time"><i class="fa fa-clock-o"></i> 3:00</div>
-          </div>
           <div class="view_chapters">
             <a href="#chapters_section"><p>View Chapters</p>
             <span class="fa fa-caret-down fa-2x" id="view_caret"></span></a>
           </div>
-          <div id="trailer_video" style="display:none">
-            <div class='embed-container'>
-              <iframe src='https://player.vimeo.com/video/157306694' allowFullScreen></iframe>
-            </div>
-            <div class="exit">
-              <a href="#"><img alt="play button" src="assets/icons/x_white.png" class="img-responsive" /></a>
-            </div>
-          </div>
 
-
-          </div>
         </div><!-- wrapper -->
         </div>
       </div>
@@ -160,16 +140,7 @@
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
-
-  <!-- This conflicts with bootstrap. It's optional, but could effect transitions
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
-
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
-  <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-  <!-- <script type="text/javascript" src="js/jquery.fullPage.js"></script> -->
-  <script type="text/javascript" src="js/examples.js"></script>
-  <!-- <script type="text/javascript" src="js/fullPage_options_home.js"></script> -->
+  <script type="text/javascript" src="js/jquery.vide.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/homescripts.js"></script>
 

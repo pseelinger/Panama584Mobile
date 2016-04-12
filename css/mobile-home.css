@@ -33,9 +33,6 @@ p{
 }
 
 #home_section {
-  background-image: url("../media/img/home_ocean.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
   height: 100vh;
 }
@@ -79,72 +76,17 @@ iframe {
 
 h3 {
   font-family: "CooperHewitt-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 18pt;
+  font-weight: 300;
+  font-size: 15pt;
   text-shadow: 0px 0px 20px rgba(40, 36, 45, 0.5);
-  /*font-style: italic;*/
-  /*letter-spacing: 1px;*/
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.25;
 }
 
 .no_spacing {
   letter-spacing: 0;
-}
-
-#play_trailer {
-  margin-top: 1%;
-  margin-bottom: 5%;
-}
-
-#play_button_container {
-  width: 80px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#play_button {
-  width: 80px;
-  height: 80px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 0 90px 0;
-  background-image: url("../assets/icons/play_button.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-a:hover #play_button {
-  background-image: url("../assets/icons/play_button_hover.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 80px;
-}
-
-.view_trailer {
-  text-align: center;
-  color: white;
-  font-weight: 700;
-}
-
-.trailer_text {
-  font-family: 'CooperHewitt-Medium';
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.trailer_text a {
-  color: white;
-}
-
-.trailer_text a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.time {
-  font-weight: 700;
-  font-size: 14px;
-  margin-top: -5px;
 }
 
 .chapter_block_mobile{
@@ -157,7 +99,7 @@ a:hover #play_button {
   text-align: right;
 }
 .view_chapters{
-  margin-top: 3.5em;
+  margin-top: 1.5em;
   text-align: center;
   font-size: 1.5em;
   font-family: 'CooperHewitt-Medium';
@@ -333,8 +275,20 @@ display: none;
   padding-bottom: 10px;
 }
 #sub-nav li{
-  padding-bottom: 5px;
+  padding-bottom: 5px !important;
 }
 .no-display{
   height: 0 !important;
+}
+.btn-default{
+  border-radius: 0;
+border: 1px solid #008B8F;
+background: none;
+color: #008B8F;
+text-transform: uppercase;
+font-family: 'CooperHewitt-Medium', sans-serif;
+font-size: 16px;
+padding-top: 10px;
+margin: 10pt 25vw;
+width: 180px;
 }
