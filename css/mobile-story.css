@@ -1,3 +1,7 @@
+a:hover{
+  text-decoration: none;
+  color: white;
+}
 p{
   margin-bottom: 10px;
 }
@@ -27,10 +31,14 @@ iframe{
   min-height: 0 !important;
 }
 .scroll-more{
-  color: #F89494;
   text-align: center;
   display: block !important;
   line-height: .5;
+}
+.scroll-more img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 #interactive-container{
   position: relative;
@@ -103,4 +111,15 @@ text-decoration: none;
 }
 .no-display{
   height: 0 !important;
+}
+.video-padding{
+  padding: 60px 0 0 0 !important
+}
+.arrows-chapters{
+  height: 150px;
+  transition: width 3s;
+  width: 0;
+}
+.arrows-chapters img{
+  margin-top: 100%;
 }

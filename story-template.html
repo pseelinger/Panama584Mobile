@@ -35,7 +35,7 @@
   <div id="menu-wrap">
   <nav class="nav-side">
      <ul id="nav_ul">
-       <li><a id="expand-nav" href=#>Chapters</a></li>
+       <li><a id="expand-nav">Chapters</a></li>
         <ul id="sub-nav" class="no-display">
           <li><a href=#>Chapter 1</a></li>
           <li><a href=#>Chapter 2</a></li>
@@ -43,41 +43,20 @@
           <li><a href=#>Chapter 4</a></li>
           <li><a href=#>Chapter 5</a></li>
         </ul>
-       <li><a href=#>Map</a></li>
-       <li><a href=#>Big Red</a></li>
+       <li><a href=#>Full Doc</a></li>
+       <li><a href=#>The Issue</a></li>
+       <li><a href=#>Game</a></li>
        <li><a href=#>About</a></li>
-       <li><a href=#>Team</a></li>
      </ul>
      <a href="#" class="nav-toggle"><a>
    </nav>
 <a href="index.html"><img alt="changing tides" src="assets/headlines/undercurrent_logo.png" class="story_headline" /></a>
 </div>
-<div class="dots-nav-mobile">
-<ul>
-<li><a href=#section0><span></span></a></li>
-<li><a href=#section1><span></span></a></li>
-<li><a href=#section2><span></span></a></li>
-<li><a href=#section3><span></span></a></li>
-<li><a href=#section4><span></span></a></li>
-</ul>
-</div>
    <div class="wrapper">
   <div id="fullpage">
 
-    <!-- Page 1: Video -->
+    <!-- Page 1: Title -->
     <div class="section firstPage_dot" id="section0">
-
-      <!-- logo
-      <div id="logo">
-        <a href="index.html">
-          <img alt="logo" src="assets/headlines/changingtides.png" class="img-responsive">
-        </a>
-      </div>
--->
-      <!-- switch languages
-      <a href="#" id="switch_language">
-        Experimenta<br />en Español
-      </a> -->
 
       <div class="intro container-video" style="margin-top: 20px;">
         <div class="row">
@@ -93,17 +72,26 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <a href=#section2 class="mobile_button">Watch Video</a>
+              <a href=#section1 class="mobile_button">Watch Video</a>
               <a href=#section3 class="mobile_button">360 Experience</a>
-              <p class="scroll-more">Scroll for more<span class="fa fa-caret-down fa-2x scroll-more"></span></p>
+              <p class="scroll-more">Scroll for more<img src="/assets/icons/arrow-down.png"></span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Page 2: Text -->
-    <div class="section fp-auto-height secondPage_dot" id="section1">
+    <!-- Page 2: Video -->
+    <div class="section video-padding thirdPage_dot" id="section1">
+      <div class="intro container-video">
+        <div class='embed-container'>
+          <iframe src='https://player.vimeo.com/video/157306694' allowFullScreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 3: Text -->
+    <div class="section fp-auto-height secondPage_dot" id="section2">
       <div class="intro container-text">
         <p>
           <img alt="C dropcap" class="dropcap" src="assets/dropcaps/C.png" />orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi est lacus, auctor sit amet massa eu, eleifend laoreet quam. Vivamus feugiat tellus nec facilisis aliquam. Mauris
@@ -132,14 +120,6 @@
       </div>
     </div>
 
-    <!-- Page 3: Video -->
-    <div class="section video-padding thirdPage_dot" id="section2">
-      <div class="intro container-video">
-        <div class='embed-container'>
-          <iframe src='https://player.vimeo.com/video/157306694' allowFullScreen></iframe>
-        </div>
-      </div>
-    </div>
 
     <!-- Page 4: 360 Video -->
     <div class="section video-padding fourthPage_dot" id="section3">
@@ -167,7 +147,7 @@
           Ut in lacus sit amet urna blandit suscipit id eget lorem. Nullam faucibus velit non fermentum gravida. Nulla tincidunt tincidunt justo quis accumsan.
         </p>
         <img alt="reef" src="media/img/reef.jpg" class="story-image" />
-        <p>
+        <p id="trigger-para">
           Ut et purus metus. Maecenas id ex et enim rutrum molestie. Suspendisse ac mi ut lectus eleifend rhoncus ut ut diam. Praesent nisl risus, eleifend ut diam nec, interdum vestibulum lectus. Proin nec interdum dui. Cras tristique, elit et sollicitudin volutpat,
           purus felis mattis nisi, eget tristique sem elit quis eros.
         </p>
@@ -177,13 +157,13 @@
         <p>
           Phasellus sit amet arcu vehicula, ultrices risus at, congue odio. Nullam luctus ut mauris sed semper. Nunc enim augue, dictum lobortis ipsum at, commodo tincidunt ex.
         </p>
-        <p class="last-para">
+        <p>
           Nam pharetra, nibh sed dictum egestas, nisi erat volutpat diam, et accumsan mi tellus vel justo. Sed vel scelerisque neque, eget commodo eros.
         </p>
       </div>
 
       <a href="#">
-        <div id="previous-chapter">
+        <div id="previous-chapter" class="arrows-chapters">
           <div class="row">
             <div class="col-xs-3 arrow"><img alt="left arrow" src="assets/icons/left_arrow_white.png" class="img-responsive"></div>
             <div class="col-xs-9">
@@ -194,7 +174,7 @@
         </div>
       </a>
       <a href="#">
-        <div id="next-chapter">
+        <div id="next-chapter" class="arrows-chapters">
           <div class="row">
             <div class="col-xs-9">
               <div class="chapter-label">Chapter 3</div>
@@ -213,8 +193,10 @@
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waypoints.js"></script>
   <script type="text/javascript" src="js/storyscripts.js"></script>
 
 </body>
