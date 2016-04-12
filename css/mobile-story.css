@@ -12,6 +12,9 @@ p.article_credits{
   line-height: 1.25;
   margin-bottom: 10px;
 }
+.arthead{
+  width: 100%;
+}
 .story-image{
   width: 100%;
   margin: 10px 0 10px 0;
@@ -34,6 +37,7 @@ iframe{
   text-align: center;
   display: block !important;
   line-height: .5;
+  padding-top: 20px;
 }
 .scroll-more img{
   display: block;
@@ -96,7 +100,8 @@ text-decoration: none;
   padding-left: 0;
 }
 .article_subhead{
-  font-size: 5vh;
+  font-size: 3vh;
+  padding-bottom: 20px;
 }
 #sub-nav{
   margin-left: 20px;
@@ -122,4 +127,7 @@ text-decoration: none;
 }
 .arrows-chapters img{
   margin-top: 100%;
+}
+#buttons, #credits{
+  padding-top: 20px;
 }

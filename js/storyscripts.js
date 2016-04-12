@@ -19,7 +19,7 @@ var waypoint = new Waypoint({
         .css("display", "inline-block")
         .css("left", "0")
         .css("top", "auto");
-      $('.arrows-chapters').css('width', '50vw');
+      $('.arrows-chapters').css('width', '49vw');
     }
   }
 })
