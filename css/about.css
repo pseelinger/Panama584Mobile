@@ -1,0 +1,145 @@
+/*ABOUT PAGE*/
+.bio-body, .bio-name {
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.bio-role {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.bio {
+  height: 80%;
+  margin: -15px 0 0 0;
+}
+
+.social {
+  height: 10%;
+}
+
+
+.bio-twitter {
+  margin: 0 0 0 90px;
+  font-size: 8pt;
+  position: absolute;
+}
+
+.bio-instagram {
+  font-size: 8pt;
+  position: absolute;
+}
+
+.bio-instagram a {
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+}
+
+.bio-twitter a {
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+}
+
+.bio-headshot {
+  width: 100%;
+  height: auto;
+}
+
+.bio-body {
+  margin-bottom: 8px;
+  font-size: 8.5pt;
+}
+
+.bio-website, .bio-website a:hover, .bio-website a {
+  color: white;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 100;
+  margin: 5px 0 0 30px;
+}
+
+.bio-pic {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.bio-pic__image { display: block; }
+
+.bio-pic__body {
+  background: rgba(0, 139, 143, 0.7);
+  bottom: 0;
+  color: white;
+  font-size: 12px;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.bio-pic__body:hover { opacity: 1; }
+
+.bio-pic__body:after,
+.bio-pic__body:before {
+  /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.bio-pic__body:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+.bio-pic__body:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.bio-pic__body:hover:after,
+.bio-pic__body:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bio-pic__body h2 { margin-top: 0; }
+
+.section{
+  padding-top: 70px;
+}
+
+/*---MEDIA QUERY---*/
+@media screen and (max-width: 1214px) {
+.bio-body, .bio-instagram, .bio-twitter, .bio-website {
+  font-size: 7pt;
+  padding: 0;
+
+}
+
+}
