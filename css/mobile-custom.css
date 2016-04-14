@@ -257,6 +257,7 @@
   color: white;
   background-color: #E6E7E8;
   color: #008A8E;
+  margin: 5px 0 0 5px;
 }
 .nav-toggle:before{
   content: "\2630";
@@ -308,6 +309,8 @@ display: none;
 .story_headline{
   float: right;
   height: 40px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .menu-wrap{
   background-color: #E6E7E8;
